@@ -1,0 +1,105 @@
+body {
+    background-color: rgb(142, 140, 172);
+}
+
+h1 {
+    padding: 50px;
+    margin: 20px;
+    align-content: center;
+    font-family: Arial;
+    text-align: center;
+    background-color: rgb(99, 82, 123);
+    border-radius: 10px;
+    box-shadow: 5px 10px rgb(50,50,50);
+    color:rgb(200, 200, 200);
+}
+
+h2 {
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-family: Arial;
+    text-align: center;
+    background-color: #635c8c;
+    border-radius: 10px;
+}
+
+h3 {
+    padding: 10px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 5px;
+    background-color: black;
+    border-radius: 10px;
+    color: rgb(255, 255, 255);
+    font-family: Arial; 
+    text-align: center;
+}
+
+#enrolInfo {
+    background-color: rgb(250, 250, 250);
+    line-height: 50px;
+    align-self: center;
+    margin: auto;
+    font-family: Arial;
+    border-style: groove;
+    border-radius: 10px;
+}
+
+#enrolInfo td {
+    padding-left: 5px;
+    padding-right: 5px;
+}
+
+#enrolInfo #tabletop {
+    background-color: rgb(27, 44, 98);
+    color: white;
+    font-family: Arial;
+    height: 20px;
+    padding-left: 5px;
+    text-align: left;
+}
+
+#enrolInfo tr:nth-child(even){
+    background-color: rgb(230, 230, 230);
+}
+
+#census {
+    font-family: Arial;
+    font-weight: bold;
+    color:rgb(27, 44, 98);
+    font-stretch: expanded;
+}
+
+ul {
+    list-style-type: square;
+    margin: 0px;
+    padding: 10px;
+    line-height: 20px;
+}
+
+
+.vulnerabilities {
+    margin-top: 50px;
+    background-color: rgb(249, 247, 247);
+    align-self: center;
+    margin: auto;
+    font-family: Arial;
+    border-style: groove;
+    border-radius: 10px;
+}
+
+.vulnerabilities #headings{
+    background-color: pink;
+}
+
+.vulnerabilities td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+.vulnerabilities th {
+    border: 1px solid black;
+}

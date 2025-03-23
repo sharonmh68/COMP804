@@ -1,0 +1,165 @@
+<!--- Student Name: Sharon Harrison 
+      Student Number: 9777714 
+      Assessment Task 3: Assignment #1-->
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Assignment Task #1</title>
+        <link rel="stylesheet" href="css/style.css">
+        <script>
+            // Task 4
+            function catClicked(){
+                document.getElementById("animals").value="Cat is clicked";
+                document.getElementById("animalImage").src="img/cat.png";
+            }
+            
+            function dogClicked(){
+                document.getElementById("animals").value="Dog is clicked";
+                document.getElementById("animalImage").src="img/dog.png";
+            }
+            function frogClicked(){
+                document.getElementById("animals").value="Frog is clicked";
+                document.getElementById("animalImage").src="img/frog.png";
+            }
+            
+        </script>
+    </head>
+    <body>
+        <!-- Task 1 -->
+        <h3>Task 1</h3>
+        <h1>9777714 Sharon Harrison</h1>
+        <h2>COMP804: Web Security</h2>
+        <h3>Assignment task #1, due 22nd March 2025 </h3>
+        <!-- Task 2 -->
+        <h3>Task 2</h3>
+        <table id="enrolInfo">
+            <tr id="tabletop">
+                <th>Activity</th>
+                <th>Date</th>
+            </tr>
+            <tr>
+                <!--- The following table content is sourced from UOW website, as per assessment instructions
+                source: https://www.uow.edu.au/student/dates/#d.en.186577-->
+                <td>Enrolments open (continuing students)</td>
+                <td>18th November 2024</td>
+            </tr>
+            <tr>
+                <td>Enrolments open (commencing students)</td>
+                <td>2nd December 2024</td>
+            </tr>
+            <tr>
+                <td>Enrolments open (continuing students)</td>
+                <td>18th November 2024</td>
+            </tr>
+            <tr>
+                <td>Orientation day for new students (Sydney)</td>
+                <td>3rd February 2025</td>
+            </tr>
+            <tr>
+                <td>Orientation day for new students (Wollongong)</td>
+                <td>4th February 2025</td>
+            </tr>
+            <tr>
+                <td>Orientation day for new students (Online)</td>
+                <td>5th February 2025</td>
+            </tr>
+            <tr>
+                <td>Lectures commence</td>
+                <td>10th Feb - 18th April 2025</td>
+            </tr>
+            <tr>
+                <td>Last day to enrol / add subjects yourself</td>
+                <td>21st February 2025</td>
+            </tr>
+            <tr>
+                <td>Last day to enrol / add subjects with Head of Students approval</td>
+                <td>28th February</td>
+            </tr>
+            <tr>
+                <td>
+                    <div id="census">CENSUS DATE</div>
+                    <ul>
+                        <li>Fees due</li>
+                        <li>Last day to withdraw from subject without paying for it</li>
+                        <li>HECS / FEE HELP debt reporting data</li>
+                        <li>Last day to change HECS / FEE HELP billing option</li>
+                    </ul>
+                    <a href="https://uowedu.service-now.com/askuow?id=kb_article_view&sysparm_article=KB0012659">Census information</a>
+                </td>
+                <td>3rd March 2025</td>
+            </tr>
+            <tr>
+                <td>Student Services and Amenities Fees due</td>
+                <td>4th March 2025</td>
+            </tr>
+            <tr>
+                <td>Last day to withdraw without academic penalty</td>
+                <td>21st March 2025</td>
+            </tr>
+        </table>
+    <!-- Task 3 -->
+    <h3>Task 3</h3>
+    <table class="vulnerabilities">
+        <tr id="headings">
+            <td>Name</td>
+            <td>Description (my own)</td>
+        </tr>
+        <tr>
+            <td>Brute Force <p><img src="img/brute.png" alt="brute force picture" width="100px"></p><p>Source: https://content.kaspersky-labs.com</p></td>
+            <td>Where the threat actor persistently tries different logins/passwords to gain unauthorised access to a system. This could be done manually, but typically an automated script runs, with the capacity to check large volumes of user/password combinations. A common example are wireless security cameras, which have a default username and password. These are publicly available online for the different manufacturers and models. Most people don't bother changing these default settings, leaving them vulnerable to brute force attacks of their security monitors.</td>
+        </tr>
+        <tr>
+            <td>On-Path attack <p><img src="img/mitm.png" alt="On-path attack" width="100px"></p><p>Source: https://www.wallarm.com/what/what-is-an-on-path-attacker</p></td>
+            <td>Traditionally known as a Man-in-the-middle (MitM) attack, this involves a threat actor intercepting network communication between two or more systems. The threat actor intercepts network packets and can interrogate the contents (this is known as packet sniffing). The threat actor's system masks as the IP of the recipient, so the network traffic is diverted to them. To remain undetected, they can choose to allow the traffic to continue on to it's intended address.</td>
+        </tr>
+        <tr>
+            <td>SQL Injection <p><img src="img/sql.png" alt="SQL injection" width="100px"></p><p>Source: https://portswigger.net/web-security/sql-injection</p></td>
+            <td>SQL injection is where an SQL command is entered into a text field of a web form, with the view of executing the command on the backend database. This could give the threat actor access to sensitive data, and even the ability to modify or delete data.</td>
+        </tr>
+        <tr>
+            <td>Cross-site Scripting <p><img src="img/xss.png" width="100px"></p><p>Source: https://www.imperva.com/learn/application-security/cross-site-scripting-xss-attacks/</p></td>
+            <td>When threat actors insert malicious script into websites that compromise the security of the web page and it's behaviour.</td>
+        </tr>
+        <tr>
+            <td>Distributed Denial of Service (DDOS)<p><img src="img/ddos.png" width="100px"></p><p>Source: https://www.cloudflare.com/learning/ddos/what-is-a-ddos-attack/</p></td>
+            <td>Denial of Service is when multiple redundant requests are sent to a web server with the malicious intention of flooding the server with requests. This results in the server being unable to process all the requests, resulting in timeouts for authentic requests from elsewhere. A distributed denial of service is like an automated version of this, where bots in different locations are utilised to perform the DOS attack.</td>
+        </tr>
+        <tr>
+            <td>Zero day exploit<p><img src="img/zero.png" width="100px"></p><p>Source: https://www.wallarm.com/what/explanation-of-the-zero-day-attack</p></td>
+            <td>This is when a vulnerability is discovered in software by threat actors before the software developer is aware, giving them "zero days" to develop a patch for the vulnerability.</td>
+        </tr>
+        <tr>
+            <td>DNS Spoofing<p><img src="img/dns.png" width="100px"></p><p>Source: https://www.researchgate.net/figure/Example-of-DNS-ID-Spoofing_fig21_49459840></p></td>
+            <td>When a threat actor sets up a fake DNS entries so that network traffic is diverted to this server instead of the authentic server.</td>
+        </tr>
+        <tr>
+            <td>Packet Sniffing<p><img src="img/sniffing.png" width="100px"></p><p>Source: https://www.endace.com/learn/what-is-packet-sniffing</p></td>
+            <td>Computer networks send data using packets. For example, a webpage being sent is broken up into many packets before being sent. Each packet can take an entirely different route to all the other packets. This enables packets to be sent quickly in contrast to a large file being sent via a single route. These routes can be intercepted, making the packets vulnerable to being accessed and their contents read. This is called packet sniffing.</td>
+        </tr>
+        <tr>
+            <td>Phishing<p><img src="img/phishing.png" width="100px"></p><p>Source: https://www.malwarebytes.com/phishing</p></td>
+            <td>A malicious email or message that appears authentic, but has malicious intent with links that redirect the user to unauthorised websites with the intent of tricking the user into providing their PII. This could include information such as their credit card details, date of birth, bank details, username and passwords to different accounts.</td>
+        </tr>
+        <tr>
+            <td>Credential Stuffing<p><img src="img/stuffing.png" width="100px"></p><p>Source: https://www.abc.net.au/news/2024-01-19/what-is-credential-stuffing-scams-how-to-prevent-and-protect/103367570</p></td>
+            <td>This is when threat actors obtain login credentials from an account or accounts and use them to try to gain unauthorised access to other accounts.</td>
+        </tr>
+    </table>
+
+    <!-- Task 4 -->
+    <h3>Task 4</h3>
+    <button type="button" class="button1" onclick="catClicked()">Cat</button>
+	<button type="button" class="button2" onclick="dogClicked()">Dog</button>
+    <button type="button" class="button3" onclick="frogClicked()">Frog</button>
+	<p>
+		<input type="text" class="animals" id="animals" value="">
+	</p>	
+	<p>
+		<img id="animalImage" src="" width="300">
+    </p>
+    </body>
+
+    <h3>Task 5</h3>
+    <a href="https://github.com/sharonmh68/COMP804.git">Link to Github Repository</a>
+</html>
